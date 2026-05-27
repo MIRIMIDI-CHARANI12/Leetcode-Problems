@@ -1,9 +1,5 @@
-class Solution(object):
-    def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
         left=0
         ml=0
         chset=set()
@@ -17,4 +13,5 @@ class Solution(object):
                     left+=1
                 chset.add(s[r])
         return ml
+        
         
